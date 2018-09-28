@@ -1,5 +1,6 @@
 from django.urls import path, re_path
 from . import views
+from rest_framework.urlpatterns import format_suffix_patterns
 
 urlpatterns = [
     path('rol/', views.rolList.as_view()),
@@ -57,3 +58,5 @@ urlpatterns = [
     re_path(r'^diagnostico/(?P<pk>[0-9]+)/$', views.diagnosticoDetail.as_view()),
 
 ]
+
+urlpatterns = format_suffix_patterns(urlpatterns)
