@@ -26,7 +26,7 @@ urlpatterns = [
     path('schedule/', views.scheduleList.as_view()),
     re_path(r'^schedule/(?P<pk>[0-9]+)/$', views.scheduleDetail.as_view()),
 
-    path('medicamento/$', views.medicamentoList.as_view()),
+    path('medicamento/', views.medicamentoList.as_view()),
     re_path(r'^medicamento/(?P<pk>[0-9]+)/$', views.medicamentoDetail.as_view()),
 
     path('tipoProducto/', views.tipoProductoList.as_view()),

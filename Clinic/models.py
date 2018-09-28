@@ -25,7 +25,7 @@ class paciente(models.Model):
     f_nac = models.DateField()
     telefono = models.CharField(max_length=15)
     sexo = models.CharField(max_length=1)
-    foto = models.ImageField(update_to='fotos', default='fotos/None/noimg.png')
+    foto = models.ImageField(default='fotos/None/noimg.png')
 
 class especialidad(models.Model):
     id = models.AutoField(primary_key=True)
