@@ -1,6 +1,4 @@
 django==2.1.1
-django-rest-framework=3.8.2
+django-rest-framework==3.8.2
 psycopg2==2.7.5
 Pillow==5.2.0
-pytz==2018.5
-setuptools==39.1.0
